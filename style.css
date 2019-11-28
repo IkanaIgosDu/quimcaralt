@@ -171,3 +171,48 @@ th:nth-child(2){
     border-bottom: 1px solid rgb(100, 100, 100);
 }
 
+#gallery{
+
+    margin: auto;
+    width: 90%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .column {
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    transition: 0.3s linear;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .column > a:hover > img{
+    opacity: 0.5;
+    box-shadow: 0 0 10px 2px grey;
+  }
