@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
     <title>Home</title>
 </head>
 <body>
@@ -12,6 +13,7 @@
         <header>
             <img src="./img/PMD-Logo-GtI.png" alt="">
         </header>
+        <div class="dropShadow"></div>
         <nav class="navbar">
             <ul>
                 <li><a class="tab" href="index.html">Home</a></li>
@@ -20,12 +22,16 @@
                 <li><a class="tab" href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
+        <span id="menu" style="display: none;">&#9776;</span>
         <section class="content">
             <section class="video-player">
                     <video autoplay muted loop id="myVideo">
                             <source src="./vid/pokemon_mystery_dungeon_opening.mp4" type="video/mp4">
                     </video>
                     <div class="shadow"></div>
+            </section>
+            <section id="footer">
+                Pagina web creada per Quim Caralt Barrot - © UVic-UCC 2019
             </section>
         </section>
     </div>
